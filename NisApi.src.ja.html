@@ -1802,17 +1802,17 @@
 
     <p>なし</p>
 
-    <h2>Retrieving historical account data</h2>
+    <h2>アカウントの履歴の取得</h2>
 
-    <p>The configuration for NIS offers the possibility for a node to expose additional features
-        that other nodes don't want to offer. One of those features is the supply of historical account
-        data like balance and importance information. To turn on this feature for your NIS, you need to add
-        HISTORICAL_ACCOUNT_DATA to the list of optional features in the file config.properties.</p>
+    <p>NISの設定は、ノードに他のノードでは提供したくない追加機能を公開する可能性を提供しています。
+        それらの機能のうちの1つは、残高やインポータンス情報などのアカウントの履歴データを提供する機能です。
+        この機能をNISで有効にするには、config.properties ファイルのオプション機能のリストに
+        HISTORICAL_ACCOUNT_DATA を追加する必要があります。</p>
 
     <api get>/account/historical/get</api>
 
     <desc>
-        <p class=NemNoSpacing>Gets historical information for an account.</p>
+        <p class=NemNoSpacing>アカウントの履歴情報の取得</p>
     </desc>
 
     <h4>パラメータ:</h4>
@@ -1849,8 +1849,8 @@
             </td>
             <td>
                 <p class=NemNoSpacing>The value by which the height is incremented between each data point.
-                    The value must be greater than 0. NIS can supply up to 1000 data points with one request.
-                    Requesting more than 1000 data points results in an error.</p>
+                    値は0よりも大きい値である必要があります。NISは1000データポイントまでを1度のリクエストで提供できます。
+                    1000データポイントを超えるリクエストはエラーとなります。</p>
             </td>
         </tr>
     </table>
@@ -1882,8 +1882,8 @@
 
     <h4>発生しうるエラー:</h4>
 
-    <p class=NemNoSpacing>アドレスが妥当ではない場合、the start height is larger than the endheight, the increment
-        is not a positive or the request results in more than 1000 data points an error is returned.</p>
+    <p class=NemNoSpacing>アドレスが妥当ではない場合、開始高が終了高よりも大きい、増加分が
+        正ではない、リクエスト結果が1000データポイントを超える場合、エラーが返ります。</p>
 
     <h1>ブロックチェーン関連のリクエスト</h1>
 
@@ -1997,7 +1997,7 @@
                 <p class=JSON>height</p>
             </td>
             <td>
-                <p>The height of the block. Each block has a unique height.
+                <p>ブロック高。各ブロックは固有の高さを持っています。
                     Subsequent blocks differ in height by 1.</p>
             </td>
         </tr>
@@ -2132,8 +2132,8 @@
                 <p class=JSON>blockHash </p>
             </td>
             <td>
-                <p class=NemNoSpacing>The 256 bit sha3 hash of the block.
-                    The hash must be supplied as hexadecimal string.</p>
+                <p class=NemNoSpacing>ブロックの256ビットSHA3のハッシュ。
+                    ハッシュは16進数文字列で渡されなければなりません。</p>
             </td>
         </tr>
     </table>
@@ -3984,14 +3984,14 @@
         <b>トランザクションタイプ:</b> 4 バイト (整数) 以下のバージョンをサポートしています:
         <ul>
             <li>0x0101 (転送トランザクション)</li>
-            <li>0x0801 (importance転送トランザクション)</li>
+            <li>0x0801 (インポータンス転送トランザクション)</li>
             <li>0x1001 (マルチシグ集約変更転送トランザクション)</li>
             <li>0x1002 (マルチシグ署名トランザクション)</li>
             <li>0x1004 (マルチシグトランザクション)</li>
             <li>0x2001 (provision namespace transaction)</li>
             <li>0x4001 (mosaic definition creation transaction)</li>
             <li>0x4002 (mosaic supply change transaction)</li>
-            <b>example (importance transfer transaction): </b> 0x01, 0x08, 0x00, 0x00
+            <b>例 (インポータンス転送トランザクション): </b> 0x01, 0x08, 0x00, 0x00
         </ul>
     </li>
     <li>
@@ -5410,7 +5410,7 @@
         </f>
     </fields>
 
-    <h2>BlockChainScore</h2>
+    <h2>ブロックチェーンスコア</h2>
 
     <desc>
         <p class=NemNoSpacing>The block chain score is a measure how
@@ -5426,8 +5426,7 @@
     </resp>
 
     <fields>
-        <f name="score">The score is an integer greater or equal to zero. It is submitted in hexadecimal format.</f>
-        <f name="score">スコアは0以上の整数。16進数フォーマットを用います。</f>
+        <f name="score">スコアは0以上の整数。16進数形式で提出されます。</f>
     </fields>
 
     <h2>ブロック高</h2>
