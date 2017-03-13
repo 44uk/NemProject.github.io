@@ -104,7 +104,7 @@
         <h4>1.10 からの変更点</h4>
         <ul>
             <li>章の追加 3.2 <a href="#retrieving-historical-account-data"> Retrieving historical account data</a></li>
-            <li>構造の追加 <a href="#accountHistoricalDataViewModel">AccountHistoricalDataViewModel</a></li>
+            <li>構造の追加 <a href="#アカウントの履歴データビューモデル">アカウントの履歴データビューモデル</a></li>
         </ul>
 
         <h4>1.9 からの変更点</h4>
@@ -5070,7 +5070,7 @@
 
     <h1>付録 A: JSON構造の説明</h1>
 
-    <h2>AccountHistoricalDataViewModel</h2>
+    <h2>アカウントの履歴データビューモデル</h2>
     <desc>
         <p class=NemNoSpacing>Nodes can support a feature for retrieving historical data of accounts.
             If a node supports this feature, it will return an array of AccountHistoricalDataViewModel objects.</p>
@@ -5129,7 +5129,7 @@
         <f name="isSet">フィールド &quot;score&quot;, &quot;ev&quot;, &quot;height&quot; が使用可能かどうかを示しています。isSetの値は0か1です。isSetが0の場合、フィールドは使用できません。
         </f>
         <f name="score">アカウントのインポータンス。インポータンスは0から1までの値を取ります。</f>
-        <f name="ev">The page rank portion of the importance. The page rank ranges between 0 and 1.</f>
+        <f name="ev">The page rank portion of the importance. ページランクの範囲は0から1の間です。</f>
         <f name="height">The height at which the importance calculation was performed.</f>
     </fields>
 
@@ -5227,13 +5227,13 @@
         <tr>
             <td><p class="JSON">cosignatoryOf</p></td>
             <td>
-                <p>JSON array of AccountInfo structures. The account is cosignatory for each of the accounts in the array.</p>
+                <p>アカウント情報構造のJSON配列。The account is cosignatory for each of the accounts in the array.</p>
             </td>
         </tr>
         <tr>
             <td><p class="JSON">cosignatories</p></td>
             <td>
-                <p>JSON array of AccountInfo structures. The array holds all accounts that are a cosignatory for this account.</p>
+                <p>アカウント情報構造のJSON配列。The array holds all accounts that are a cosignatory for this account.</p>
             </td>
         </tr>
     </table>
