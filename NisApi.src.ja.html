@@ -2107,11 +2107,11 @@
 
     <p class=NemNoSpacing>ありません。</p>
 
-    <h2>Requesting parts of the block chain</h2>
+    <h2>ブロックチェーンの一部のリクエスト</h2>
 
-    <p>NIS can supply either individual blocks
-        identified by block height or block hash or can supply up to 10 blocks
-        beginning at a certain height.</p>
+    <p>NISはブロック高またはブロックのハッシュによって識別される
+        個々のブロックを提供することも、特定の高から始まるブロックを
+        最大10個まで提供することもできます。</p>
 
     <!-- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- -->
     <h3>ハッシュによるブロックの取得</h3>
@@ -2222,6 +2222,9 @@
 
     <h4>発生しうるエラー:</h4>
 
+    特定の高を持つブロックがデータベースに見つからない場合、
+    NISはJSONエラーオブジェクトを返します。
+        <appa>エラーオブジェクト</appa>かエラーオブジェクト情報を参照するか、
     <p class=NemNoSpacing>If the block with the specified height
         cannot be found in the database, NIS will return a JSON error object. See
         <appa>エラーオブジェクト</appa>
