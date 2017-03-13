@@ -562,7 +562,7 @@
                 <p class=JSON>height</p>
             </td>
             <td>
-                <p>The height of the block in which the transaction was included.</p>
+                <p>トランザクションが含まれたブロック高</p>
             </td>
         </tr>
         <tr>
@@ -587,8 +587,8 @@
 
     <p>幸運が訪れると、アカウントはブロックをハーベスト(つまり生成)できます。
         The account which harvests a block collects the fees
-        which are included in the transactions in the block. The information which
-        blocks were harvested by an account can be requested. このリクエストは
+        which are included in the transactions in the block. アカウントによって
+        ハーベストされたブロックの情報はリクエストすることが出来ます。このリクエストは
         ハーベスト情報配列のJSONオブジェクトを返します。
         <appa>ハーベスト情報</appa>に例の記述があります。
     </p>
@@ -640,11 +640,11 @@
 
     <p></p>
 
-    <p>It is possible to request an array with the
-        importance information for all accounts. The request returns an array of
-        AccountImportanceViewModel JSON objects. For an example see
-        <appa>AccountImportanceViewModel</appa>
-        .
+    <p>全てのアカウントのインポータンス情報の配列を
+        リクエストすることが可能です。このリクエストは
+        アカウントインポータンスビューモデルのJSONオブジェクト配列を返します。例示は
+        <appa>アカウントインポータンスビューモデル</appa>
+        を参照してください。
     </p>
 
     <p>アカウントのインポータンスビューモデルは以下のフィールドを持っています:</p>
@@ -1935,8 +1935,8 @@
                 <p class=JSON>signature</p>
             </td>
             <td>
-                <p>ブロックの署名。All blocks in the chain are signed by
-                    the harvesters.</p>
+                <p>ブロックの署名。チェーン内の全てのブロックはハーベスターに
+                    署名されています。</p>
 
                 <p>This way any node can check if the block has been altered by some
                     evil entity.</p>
@@ -1998,7 +1998,7 @@
             </td>
             <td>
                 <p>ブロック高。各ブロックは固有の高さを持っています。
-                    Subsequent blocks differ in height by 1.</p>
+                    後続のブロック高は1だけ異なります。</p>
             </td>
         </tr>
     </table>
@@ -5348,9 +5348,9 @@
 
     <fields>
         <f name="path">相対URLパス</f>
-        <f name="start-time">ネメシスブロックが生成されてからの経過秒数</f>
+        <f name="start-time">ネメシスブロックが生成されてからの経過秒</f>
         <f name="host">リクエストを開始したホスト</f>
-        <f name="elapsed-time">The time in seconds that has elapsed since the request was received.</f>
+        <f name="elapsed-time">リクエストを受信してからの経過秒</f>
         <f name="id">リクエストのユニークID</f>
     </fields>
 
